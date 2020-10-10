@@ -74,7 +74,6 @@ public class NguoiDungRecyclerAdapter extends RecyclerView.Adapter<NguoiDungRecy
         holder.ivDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 //xoa trong db
                 String userName=arrNguoiDung.get(position).getUserName();//lay ve ten nguoi dung thu i
                 nguoiDungDao.DeleteNguoiDungBuID(userName);
@@ -89,9 +88,6 @@ public class NguoiDungRecyclerAdapter extends RecyclerView.Adapter<NguoiDungRecy
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-
-
                 final View layout = inflater.inflate(R.layout.activity_nguoi_dung_detail, null);
                 AlertDialog.Builder builder = new AlertDialog.Builder(context);
                 builder.setTitle("Sửa");

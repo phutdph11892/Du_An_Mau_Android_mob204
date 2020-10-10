@@ -4,13 +4,19 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.edu.fpoly.bookmanager.ListTheLoaiActivity">
+    tools:context="com.example.asaimen.ListTheLoaiActivity">
 
-    <ListView
-        android:id="@+id/lvTheLoai"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcTheLoai"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"></ListView>
+        android:layout_marginTop="8dp"/>
+<!--    <ListView-->
+<!--        android:id="@+id/lvTheLoai"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:layout_marginTop="8dp"></ListView>-->
 
 </LinearLayout>

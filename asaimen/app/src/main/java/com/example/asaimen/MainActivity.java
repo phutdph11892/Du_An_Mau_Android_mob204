@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void viewListBookActivity(View view) {
-        Intent intent = new Intent(this,NguoiDungActivity.class);
+        Intent intent = new Intent(this,ThemSachActivity.class);
         startActivity(intent);
     }
 

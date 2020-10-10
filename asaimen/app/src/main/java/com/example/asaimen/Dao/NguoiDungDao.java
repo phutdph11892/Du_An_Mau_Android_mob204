@@ -47,7 +47,7 @@ public class NguoiDungDao {
                 null, null, null, null);
         cursor.moveToFirst();
         while (cursor.isAfterLast() == false) {//neu khong phai bang ghi cuoi cung
-                NguoiDung ng=new NguoiDung();
+                    NguoiDung ng=new NguoiDung();
             ng.setUserName(cursor.getString(0));
             ng.setPassWord(cursor.getString(1));
             ng.setPhone(cursor.getString(2));
