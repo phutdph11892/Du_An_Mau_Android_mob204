@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,7 +17,7 @@ import com.example.asaimen.R;
 
 import java.util.List;
 
-public class SachRecAdapter extends RecyclerView.Adapter<SachRecAdapter.RecyViewHolder> {
+public class SachRecAdapter extends RecyclerView.Adapter<SachRecAdapter.RecyViewHolder>  {
     private Context context;
     private List<Sach> sachList;
     private LayoutInflater inflater;
@@ -78,4 +79,5 @@ public class SachRecAdapter extends RecyclerView.Adapter<SachRecAdapter.RecyView
             this.ivDelete=ivDelete;
         }
     }
+
 }

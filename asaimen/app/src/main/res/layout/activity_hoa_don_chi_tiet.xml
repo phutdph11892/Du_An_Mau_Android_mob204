@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    tools:context="com.edu.fpoly.bookmanager.HoaDonChiTietActivity">
+    tools:context="com.example.asaimen.HoaDonChiTietActivity">
 
 
     <EditText
@@ -57,10 +57,16 @@
         android:textStyle="bold"
         android:text="Thành tiền:"
         />
-    <ListView
-        android:id="@+id/lvCart"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcCart"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"></ListView>
+        android:layout_marginTop="8dp"/>
+<!--    <ListView-->
+<!--        android:id="@+id/lvCart"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginBottom="8dp"-->
+<!--        android:layout_marginTop="8dp"></ListView>-->
 </LinearLayout>

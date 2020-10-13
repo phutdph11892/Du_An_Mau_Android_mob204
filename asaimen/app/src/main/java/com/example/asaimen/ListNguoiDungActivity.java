@@ -45,7 +45,7 @@ public class ListNguoiDungActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
 
       NguoiDungRecyclerAdapter adapter =new NguoiDungRecyclerAdapter(ListNguoiDungActivity.this,dsNguoiDung);
-        //NguoiDungRecAdapter adapter = new NguoiDungRecAdapter(ListNguoiDungActivity.this,dsNguoiDung);
+      //  NguoiDungRecAdapter adapter = new NguoiDungRecAdapter(ListNguoiDungActivity.this,dsNguoiDung);
         recyclerView.setAdapter(adapter);
 
 

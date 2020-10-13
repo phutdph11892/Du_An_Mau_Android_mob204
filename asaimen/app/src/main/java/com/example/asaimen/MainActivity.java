@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ViewListHoaDonActivity(View view) {
+        Intent intent = new Intent(this,HoaDonChiTietActivity.class);
+        startActivity(intent);
     }
 
     public void ViewTopSach(View view) {

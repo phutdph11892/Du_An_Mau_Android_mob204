@@ -109,7 +109,7 @@ public class NguoiDungRecyclerAdapter extends RecyclerView.Adapter<NguoiDungRecy
                         nguoiDung.setPhone(phone.getText().toString());
                         nguoiDungDao.update(nguoiDung);
                         notifyDataSetChanged();
-                        Toast.makeText(context, "Update thành công", Toast.LENGTH_LONG).show();
+                            Toast.makeText(context, "Update thành công", Toast.LENGTH_LONG).show();
                     }
                 });
                 AlertDialog dialog = builder.create();

@@ -1,6 +1,7 @@
 package com.example.asaimen;
 
 import android.os.Bundle;
+import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -16,12 +17,15 @@ import java.util.List;
 public class ListBookActivity extends AppCompatActivity {
 public static List<Sach> sachList = new ArrayList<>();
 SachDao sachDao;
+EditText edtTimKiem;
 RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_book);
+        edtTimKiem=findViewById(R.id.edSearchBook);
         recyclerView=findViewById(R.id.rcBook);
+
         sachDao = new SachDao(ListBookActivity.this);
         sachList=sachDao.getAllSach();
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getApplicationContext());
